@@ -4,7 +4,7 @@ const index = require("./routes/index");
 const app = express();
 app.use(express.json());
 app.use("/user", index);
-
+//const mysql = require("mysql2");
 
 //const PORT = process.env.PORT;
 const PORT = process.env.PORT
@@ -62,7 +62,7 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT , () =>{
     console.log(`server running $ {PORT}`);
 });
-/*
+*/
 /*
 const connection  = mysql.createConnection({
     host: dbConfig.HOST,

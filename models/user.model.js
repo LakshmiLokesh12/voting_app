@@ -31,7 +31,7 @@ exports.CreateElection = (data, callback) => {
 };
 
 
-exports.CreateCandidate = (data, callback) => {
+exports.AddCandidate = (data, callback) => {
   let values = Object.values(data);
   console.log(data);
   const sql = `INSERT INTO CANDIDATE ( 

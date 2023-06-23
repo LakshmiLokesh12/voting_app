@@ -1,8 +1,5 @@
 const mysql = require("mysql2");
-
 const config = require("./config/db.config");
-//const mysql = require("mysql2");
-//const config = require("./db.config");
 var pool = mysql.createPool(config.mysql.prod);
 
 function executeQuery(sql, data, callback) {
